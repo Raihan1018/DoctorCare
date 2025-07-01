@@ -39,4 +39,24 @@ const services = [
   },
 ];
 
-// generate service card
+// generate service card function
+function generateServiceHTML(service) {
+  return `
+  
+          <div
+            class="bg-white shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer rounded-lg overflow-hidden"
+          >
+            <div class = "p-6 text-left">
+              <img src="./images/service-icon.png" alt="service icon">
+              <h3 class = "text-2xl font-semibold my-4">${service.title}</h3>
+              <h3 class = "text-gray-700 mb-4">${service.description}</h3>
+            </div>
+          </div>
+
+  `;
+}
+
+const serviceContainer = document.getElementById("service-container");
+serviceContainer.innerHTML = services
+  .map((service) => generateServiceHTML(service))
+  .join("");
