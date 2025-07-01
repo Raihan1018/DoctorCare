@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00856F",
+              "green-light": "#DCE9E2",
+              "green-light-02": "#F7F9F9",
+              "brand-beige": "#FFFAF1",
+              "brand-green-hover": "#00453A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="green-light-02 overflow-x-hidden">
+    <!-- header -->
+    <header
+      id="header"
+      class="bg-[#DCE9E2] text-primary fixed top-0 right-0 left-0 w-full z-50"
+    >
+      <nav
+        class="container mx-auto max-w-screen-lg flex justify-between items-center p-4"
+      >
+        <!-- logo -->
+        <div class="text-xl font-semibold">
+          <a href="/"
+            ><span class="text-black">Doctor</span
+            ><span class="text-primary">Care</span></a
+          >
+        </div>
+
+        <!-- menu items -->
+
+        <ul class="hidden md:flex space-x-8">
+          <li>
+            <a
+              href="#home"
+              class="hover:text-primary hover:underline underline-offset-8"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="hover:text-primary hover:underline underline-offset-8"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="hover:text-primary hover:underline underline-offset-8"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#home"
+              class="hover:text-primary hover:underline underline-offset-8"
+              >Appointment</a
+            >
+          </li>
+        </ul>
+
+        <!-- call to action -->
+        <div class="hidden md:block">
+          <a
+            id="contact-btn"
+            href="#contact"
+            class="md:w-56 text-primary hover:text-white border border-primary px-6 py-2.5 rounded-full hover:bg-primary transition-all duration-200 md:flex justify-center items-center"
+            ><button>Book Appointment</button></a
+          >
+        </div>
+        <!-- mobile nav bar -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="navbar-burger flex items-center p-3"
+          >
+            <img
+              class="block w-4 h-4 fill-current"
+              src="./images/menu-icon.svg"
+              alt="Menu Icon"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
