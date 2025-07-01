@@ -60,3 +60,13 @@ const serviceContainer = document.getElementById("service-container");
 serviceContainer.innerHTML = services
   .map((service) => generateServiceHTML(service))
   .join("");
+
+// get current year for footer section
+
+// const currentYear = new Date().getFullYear();
+// // Set the year inside the span with id="year"
+// document.getElementById("year").textContent = currentYear;
+
+
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent = currentYear;
